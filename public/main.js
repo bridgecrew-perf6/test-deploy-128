@@ -823,7 +823,8 @@ class RestDataSource {
             })
         };
         this.user = new _user_model__WEBPACK_IMPORTED_MODULE_2__["User"]();
-        this.baseUrl = `${PROTOCOL}://${location.hostname}:${PORT}/api/`;
+        // this.baseUrl = `${PROTOCOL}://${location.hostname}:${PORT}/api/`;
+        this.baseUrl = `https://comp229-test-angular-deply.herokuapp.com/api/`;
     }
     getSurveys() {
         return this.http.get(this.baseUrl + 'surveys');
