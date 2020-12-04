@@ -36,8 +36,8 @@ export class RestDataSource
               private jwtService: JwtHelperService)
   {
     this.user = new User();
-    this.baseUrl = `${PROTOCOL}://${location.hostname}:${PORT}/api/`;
-    // this.baseUrl = `https://comp229-test-angular-deply.herokuapp.com/api/`;
+    // this.baseUrl = `${PROTOCOL}://${location.hostname}:${PORT}/api/`;
+    this.baseUrl = `https://comp229-test-angular-deply.herokuapp.com/api/`;
   }
 
   getSurveys(): Observable<IResponse>
