@@ -852,7 +852,7 @@ class RestDataSource {
         return this.http.post(this.baseUrl + 'login', user, this.httpOptions);
     }
     storeUserData(token, user) {
-        localStorage.setItem('id_token', 'Bearer ' + token);
+        localStorage.setItem('id_token', token);
         localStorage.setItem('user', JSON.stringify(user));
         this.authToken = token;
         this.user = user;
