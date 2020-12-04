@@ -36,7 +36,7 @@ export class RestDataSource
               private jwtService: JwtHelperService)
   {
     this.user = new User();
-    this.baseUrl = `${PROTOCOL}://${location.hostname}:${PORT}/`;
+    this.baseUrl = `${PROTOCOL}://${location.hostname}:${PORT}/api/`;
   }
 
   getSurveys(): Observable<IResponse>
