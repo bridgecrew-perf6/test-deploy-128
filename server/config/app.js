@@ -100,7 +100,7 @@ app.use('/api', indexRouter);
 app.use('/api/users', usersRouter);
 app.use('/api/surveys', surveysRouter);
 app.get('*', (req, res) => {
-req.senfFile(path.join(__dirname, '../../public/index.html'))
+req.sendFile(path.join(__dirname, '../../public/index.html'))
 })
 
 // catch 404 and forward to error handler
